@@ -10,4 +10,7 @@
     <color name="grey">#f4f0ec</color>
     <color name="orange">#ffa500</color>
     <color name="midgreen">#3bc43b</color>
+    <color name="lavender">	#997a8d</color>
+    <color name="darklavender">	#777696</color>
+    <color name="oldlavender">	#796878</color>
 </resources>

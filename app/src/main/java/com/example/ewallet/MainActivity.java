@@ -21,18 +21,28 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
 
+        pref = getSharedPreferences("user_details", MODE_PRIVATE);
 
         EditText uname = findViewById(R.id.editName);
         EditText pwd = findViewById(R.id.editPWD);
 
         Button login = findViewById(R.id.loginButton);
         Button register = findViewById(R.id.register);
+        Button home = findViewById(R.id.button20);
 
         pref = getSharedPreferences("user_details", MODE_PRIVATE);
 
         if(pref.contains("username") && pref.contains("password")) {
             startActivity(intent);
         }
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, home.class);
+                startActivity(intent);
+            }
+        });
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

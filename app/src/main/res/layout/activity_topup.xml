@@ -98,10 +98,10 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="179dp"
+        android:layout_height="162dp"
         app:srcCompat="@drawable/imgtopup"
-        tools:layout_editor_absoluteX="105dp"
-        tools:layout_editor_absoluteY="16dp" />
+        tools:layout_editor_absoluteX="122dp"
+        tools:layout_editor_absoluteY="43dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

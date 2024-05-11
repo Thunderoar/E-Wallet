@@ -4,60 +4,163 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/oldlavender"
     tools:context=".loginRegister">
 
-    <EditText
-        android:id="@+id/editName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="244dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="415dp"
+        android:layout_height="546dp"
+        android:background="@drawable/card"
+        android:elevation="-10dp"
+        android:text=""
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="169dp" />
 
-    <EditText
-        android:id="@+id/editPWD"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintStart_toStartOf="@+id/editName"
-        app:layout_constraintTop_toBottomOf="@+id/editName" />
-
-    <Button
-        android:id="@+id/loginButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:text="Login"
-        app:layout_constraintBaseline_toBaselineOf="@+id/register"
-        app:layout_constraintEnd_toStartOf="@+id/register"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="159dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Ewallet"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="15dp" />
 
     <TextView
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="53dp"
-        android:text="Login"
+        android:text="Hello"
         android:textSize="30dp"
-        app:layout_constraintBottom_toTopOf="@+id/editName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="165dp"
+        tools:layout_editor_absoluteY="55dp" />
 
-    <Button
-        android:id="@+id/register"
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="53dp"
+        android:layout_height="33dp"
+        android:text="RM"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="72dp"
+        android:layout_height="32dp"
+        android:text="RM"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="234dp"
+        tools:layout_editor_absoluteY="296dp" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="221dp"
+        android:layout_height="29dp"
+        android:text="Ewallet Balance:"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <TextView
+        android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="3dp"
-        android:text="Register"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/loginButton"
-        app:layout_constraintTop_toBottomOf="@+id/editPWD" />
+        android:text="Login"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="168dp"
+        tools:layout_editor_absoluteY="114dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="104dp"
+        android:layout_height="100dp"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/imgmoney"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="104dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/imgtopup"
+        tools:layout_editor_absoluteX="312dp"
+        tools:layout_editor_absoluteY="636dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="104dp"
+        android:layout_height="100dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/imgqr"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="636dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="103dp"
+        android:layout_height="101dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/imgpay"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="387dp" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="64dp"
+        android:layout_height="21dp"
+        android:background="@drawable/cardtext"
+        android:gravity="center"
+        android:text="QR"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="624dp" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="64dp"
+        android:layout_height="21dp"
+        android:background="@drawable/cardtext"
+        android:gravity="center"
+        android:text="Transfer"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="466dp" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="64dp"
+        android:layout_height="21dp"
+        android:background="@drawable/cardtext"
+        android:gravity="center"
+        android:text="Pay"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="242dp"
+        tools:layout_editor_absoluteY="467dp" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="64dp"
+        android:layout_height="21dp"
+        android:background="@drawable/cardtext"
+        android:gravity="center"
+        android:text="Topup"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="331dp"
+        tools:layout_editor_absoluteY="624dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:background="@drawable/round_outline"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/transparentprof"
+        tools:layout_editor_absoluteX="344dp"
+        tools:layout_editor_absoluteY="16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
